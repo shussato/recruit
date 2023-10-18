@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+  <masterLabel>PositionSelect</masterLabel>
+  <description>採用ポジションが選択されたときに実行</description>
+  <lightningMessageFields>
+    <fieldName>position</fieldName>
+    <description>採用ポジション（単体）</description>
+  </lightningMessageFields>
+</LightningMessageChannel>

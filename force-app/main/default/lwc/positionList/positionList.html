@@ -1,0 +1,21 @@
+<template>
+  <lightning-card title={cardTitle} icon-name="utility:search">
+    <div class="slds-card__body slds-card__body_inner">
+      <lightning-accordion allow-multiple-sections-open 
+                           onsectiontoggle={handleAccordionToggle}
+                           class="position-list">
+        <template for:each={positions} for:item="position" for:index="index">
+          <lightning-accordion-section key={position.Id} name={position.Name} label={position.Name}>
+            <p><lightning-formatted-text value={position.JobDescription__c}></lightning-formatted-text></p>
+            <div class="slds-text-align_right slds-p-top_small">
+              <lightning-button variant="brand" 
+                                label="詳細を見る" 
+                                onclick={handleDetailClick}>
+              </lightning-button>
+            </div>
+          </lightning-accordion-section>
+        </template>
+      </lightning-accordion>
+    </div>
+  </lightning-card>
+</template>

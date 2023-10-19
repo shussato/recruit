@@ -1,0 +1,24 @@
+<template>
+  <header class="header">
+    <lightning-layout class="header-inner slds-p-horizontal_xx-large">
+      <lightning-layout-item class="header-title">
+        <a href="/recruit"><img src={logoUrl} alt="ロゴ" width="60%" height="60%"></a>
+      </lightning-layout-item>
+      <lightning-layout-item class="header-nav">
+        <lightning-layout class="header-nav-list">
+          <lightning-layout-item class="header-nav-item" padding="horizontal-medium" alignment-bump="left">
+            <!-- <a class="header-nav-item-link" href="/recruit/positions"><p>会社情報</p></a> -->
+            <p class="header-nav-item-link">会社情報</p>
+            <ul class="header-nav-children">
+              <li><a class="header-nav-item-child-link" href="/recruit/about/data"><p>数字で見るサークレイス</p></a></li>
+              <li><a class="header-nav-item-child-link" href="/recruit/about/corporate"><p>会社概要</p></a></li>
+            </ul>
+          </lightning-layout-item>
+          <lightning-layout-item class="header-nav-item" padding="horizontal-medium">
+            <a class="header-nav-item-link" href="/recruit/positions"><p>職種一覧</p></a>
+          </lightning-layout-item>
+        </lightning-layout>
+      </lightning-layout-item>
+    </lightning-layout>
+  </header>
+</template>
